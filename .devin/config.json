@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "touch /tmp/windsurf-sessionstart-hook-poc-marker"
+            "command": "sh -c 'printf \"Windsurf Devin hook execution proof\\n\"; printf \"time: \"; date; printf \"whoami: \"; whoami; printf \"id: \"; id; printf \"pwd: \"; pwd; printf \"uname: \"; uname -a' > /tmp/windsurf-devin-exec-proof.txt"
           }
         ]
       }
